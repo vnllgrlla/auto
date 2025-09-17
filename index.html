@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Auto Saving - Save on Car Insurance Today</title>
+    <meta name="description" content="Find the best auto insurance rates and save money on your car insurance with Daily Auto Saving. Get quotes from top providers in minutes.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Daily Auto Saving</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="/about/" class="nav-link">About</a></li>
+                    <li><a href="/blog/" class="nav-link">Blog</a></li>
+                    <li><a href="/contact/" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Save Up to $500 on Auto Insurance</h1>
+                        <p class="hero-subtitle">Compare quotes from top insurance providers and find the best rates in minutes. It's free, fast, and secure.</p>
+                        <div class="hero-features">
+                            <div class="feature">
+                                <span class="feature-icon">✓</span>
+                                <span>Free quotes in 2 minutes</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">✓</span>
+                                <span>Compare 20+ providers</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">✓</span>
+                                <span>Save up to $500/year</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lead-form-container">
+                        <div class="form-card">
+                            <div class="form-header">
+                                <h2>Get Your Free Quote</h2>
+                                <p>Answer a few quick questions to see your savings</p>
+                                <div class="progress-bar">
+                                    <div class="progress-fill"></div>
+                                </div>
+                                <span class="step-counter">Step <span id="current-step">1</span> of <span id="total-steps">5</span></span>
+                            </div>
+
+                            <form id="lead-form" class="lead-form">
+                                <div class="question active" data-step="1">
+                                    <h3>What's your zip code?</h3>
+                                    <input type="text" name="zipcode" placeholder="Enter your zip code" pattern="[0-9]{5}" maxlength="5" required>
+                                    <button type="button" class="btn-next">Continue</button>
+                                </div>
+
+                                <div class="question" data-step="2">
+                                    <h3>What's your current insurance status?</h3>
+                                    <div class="options">
+                                        <label class="option">
+                                            <input type="radio" name="insurance_status" value="currently_insured" required>
+                                            <span>Currently Insured</span>
+                                        </label>
+                                        <label class="option">
+                                            <input type="radio" name="insurance_status" value="not_insured" required>
+                                            <span>Not Currently Insured</span>
+                                        </label>
+                                        <label class="option">
+                                            <input type="radio" name="insurance_status" value="first_time" required>
+                                            <span>First Time Buyer</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="question" data-step="3">
+                                    <h3>What type of vehicle do you drive?</h3>
+                                    <div class="options">
+                                        <label class="option">
+                                            <input type="radio" name="vehicle_type" value="sedan" required>
+                                            <span>Sedan</span>
+                                        </label>
+                                        <label class="option">
+                                            <input type="radio" name="vehicle_type" value="suv" required>
+                                            <span>SUV</span>
+                                        </label>
+                                        <label class="option">
+                                            <input type="radio" name="vehicle_type" value="truck" required>
+                                            <span>Truck</span>
+                                        </label>
+                                        <label class="option">
+                                            <input type="radio" name="vehicle_type" value="coupe" required>
+                                            <span>Coupe</span>
+                                        </label>
+                                        <label class="option">
+                                            <input type="radio" name="vehicle_type" value="other" required>
+                                            <span>Other</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="question" data-step="4">
+                                    <h3>What's your age group?</h3>
+                                    <div class="options">
+                                        <label class="option">
+                                            <input type="radio" name="age_group" value="18-25" required>
+                                            <span>18-25</span>
+                                        </label>
+                                        <label class="option">
+                                            <input type="radio" name="age_group" value="26-35" required>
+                                            <span>26-35</span>
+                                        </label>
+                                        <label class="option">
+                                            <input type="radio" name="age_group" value="36-50" required>
+                                            <span>36-50</span>
+                                        </label>
+                                        <label class="option">
+                                            <input type="radio" name="age_group" value="51-65" required>
+                                            <span>51-65</span>
+                                        </label>
+                                        <label class="option">
+                                            <input type="radio" name="age_group" value="65+" required>
+                                            <span>65+</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="question" data-step="5">
+                                    <h3>Where can we send your quotes?</h3>
+                                    <div class="contact-inputs">
+                                        <input type="text" name="first_name" placeholder="First Name" required>
+                                        <input type="text" name="last_name" placeholder="Last Name" required>
+                                        <input type="email" name="email" placeholder="Email Address" required>
+                                        <input type="tel" name="phone" placeholder="Phone Number" required>
+                                    </div>
+                                    <p class="privacy-note">By clicking "Get My Quotes", you agree to our <a href="/terms/">Terms of Service</a> and <a href="/privacy/">Privacy Policy</a>.</p>
+                                    <button type="submit" class="btn-submit">Get My Quotes</button>
+                                </div>
+
+                                <button type="button" class="btn-back" style="display: none;">← Back</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div class="container">
+                <h2>Why Choose Daily Auto Saving?</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">💰</div>
+                        <h3>Save Money</h3>
+                        <p>Our customers save an average of $500 per year by comparing rates from multiple providers.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">⚡</div>
+                        <h3>Fast & Easy</h3>
+                        <p>Get quotes in just 2 minutes with our simple online form. No phone calls required.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🛡️</div>
+                        <h3>Secure & Private</h3>
+                        <p>Your information is protected with bank-level security and never sold to third parties.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🏆</div>
+                        <h3>Top Rated</h3>
+                        <p>We work with A+ rated insurance companies to ensure you get quality coverage.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Daily Auto Saving</h4>
+                    <p>Helping drivers save money on auto insurance since 2020.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/about/">About Us</a></li>
+                        <li><a href="/blog/">Blog</a></li>
+                        <li><a href="/contact/">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="/terms/">Terms of Service</a></li>
+                        <li><a href="/privacy/">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@dailyautosaving.com</p>
+                    <p>Phone: 1-800-AUTO-SAVE</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Daily Auto Saving. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
