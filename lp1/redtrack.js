@@ -143,7 +143,7 @@ function setHref(clickID, ref) {
 function xhrrOpenAndSend(clickID, ref) {
     let xhrr = new XMLHttpRequest;
     if (getSessionRegisterViewOncePerSession() !== 1) {
-        xhrr.open("GET", "https://trk.healthylovinglife.com/view?clickid=" + clickID + "&referrer=" + ref)
+        xhrr.open("GET", "https://trk.myhealthypathways.com/view?clickid=" + clickID + "&referrer=" + ref)
         xhrr.send();
     }
     if (registerViewOncePerSession) {

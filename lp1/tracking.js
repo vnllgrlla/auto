@@ -1,7 +1,7 @@
 (function() {
     let initialProcessingAttemptedAndRan = false; 
     const cookieName = 'rtkclickid-store';
-    const localTrackingDomain = 'trk.healthylovinglife.com'; // For the image fallback
+    const localTrackingDomain = 'trk.myhealthypathways.com'; // For the image fallback
     const targetLinkSelectors = 'a.cta-button, a.video-link, a[class*="cta"]';
     const cloudRunBeaconUrl = 'https://clicklog-hgcv-114790900110.us-east1.run.app'; // Your Cloud Run URL
 
