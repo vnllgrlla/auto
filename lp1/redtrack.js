@@ -79,7 +79,7 @@ var campaignID = urlParams.get('cmpid')
 if (!campaignID) {
     campaignID = campaignIds['default']
 }
-var initialSrc = "https://trk.healthylovinglife.com/" + campaignID + "?format=json" + "&referrer=" + referrer;
+var initialSrc = "https://trk.myhealthypathways.com/" + campaignID + "?format=json" + "&referrer=" + referrer;
 for (var i = 1; i <= 10; i++) {
     initialSrc = removeParam("sub" + i, initialSrc)
 }
@@ -130,7 +130,7 @@ function getCookie(name) {
 
 function setHref(clickID, ref) {
     document.querySelectorAll('a').forEach(function (el) {
-        if (el.href.indexOf("https://trk.healthylovinglife.com/click") > -1) {
+        if (el.href.indexOf("https://trk.myhealthypathways.com/click") > -1) {
             if (el.href.indexOf('?') > -1) {
                 el.href = stripTrailingSlash(el.href) + "&clickid=" + clickID + "&referrer=" + ref
             } else {
